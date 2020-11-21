@@ -5,14 +5,18 @@ let expanded = false;
 function addPic() {
 
 
+// Adding 5 images
 
     if (massive < 6) {
 
         $(document).ready(function () {
 
+// Create an Image element charged with onClick function <img onclick="expand(this)" src="pics/1.jpg">
 
             let myImage = "<img onclick='expandPic(this)' src='pics/" + massive + ".jpg'>";
             massive++;
+
+// Add image element after the #gallery div
 
             $(myImage).appendTo("#gallery");
 
@@ -33,4 +37,9 @@ function expandPic(source) {
 
         //expanded = true;
     }
+}
+
+function investigate() {
+
+
 }

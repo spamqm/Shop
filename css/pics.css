@@ -12,22 +12,16 @@ section#gallery {
     row-gap: 30px;
     column-gap: 10px;
 
-}
-
-#expanded {
-
-    position: fixed;
-
-    max-width: 400px;
-    max-height: 400px;
-
+    border: dotted black;
 
 }
+
+
 
 
 section#gallery img {
 
-    /*border: dotted black;*/
+    border: dotted saddlebrown;
 
     padding: 5px;
 
@@ -50,6 +44,16 @@ section#gallery img {
 .markedPic {
 
     background-color: red;
+
+}
+
+#expanded {
+
+    position: fixed;
+
+    max-width: 400px;
+    max-height: 400px;
+
 
 }
 
@@ -86,3 +90,8 @@ section#gallery img {
     grid-row: 2;
 
 }*/
+
+section#testing {
+    border: dotted darkgreen;
+
+}
