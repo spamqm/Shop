@@ -1,16 +1,24 @@
 // JQuery lessons are here
-
 // all items should be included into the "Testing" section
+function addPic_test() {
 
-$(document).ready(function () {
+    // Adding 5 images
+    if (massive < 6) {
+        $(document).ready(function () {
 
-    console.log("Testing...");
+            // Create an Image element charged with onClick function <img onclick="expandPic(this)" src="pics/1.jpg">
+            const myImage = `<img  alt="pic${massive}" onclick="expandPic_test(this)" src="pics/${massive}.jpg">`;
 
+            console.log(myImage);
+            massive++;
 
-    let element = $("<div>", {
-        text: "Some input is here",
-        id: "pink"
-    });
+            // Add image element INTO the #gallery div
+            const temp = $(`#gallery`);
+            $(myImage).appendTo(temp);
+        });
+    } else
+        massive = 1;
+}
 
-    element.addClass("section3").insertAfter("#placeHolder");
-});
+function expandPic_test(element) {
+}
